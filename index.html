@@ -17,184 +17,33 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="award.css">
+    <link rel="stylesheet" href="nav.css">
 
     <title>Wild Wisdom Global Challenge 2023!</title>
 </head>
 
 <body>
 
-    <div class="header">
-        <div class="logo">
-            <!-- <span>Logo</span> -->
-            <a href="./"><img src="https://picsum.photos/200/300" alt=""></a>
+    <!--NAVBAR -->
+    <nav>
+        <div class="wrapper">
+          <div class="navlogo"><img src="Logo.jpg" alt="Nature" class="navlogo" width="60" height="40"></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="test.html">About WWSG</a></li>
+            <li><a href="test.html">Events</a></li>
+            <li><a href="test.html">Updates</a></li>
+            <li><a href="test.html">Register Now</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
-        <div class="menu-list">
-            <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="#intro">About WWSG</a></li>
-                <li><a href="#announcements">Announcements</a></li>
-                <li><a href="#sponsors">Sponsors</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="registration.html" class="reg-btn">Register Now</a></li>
-            </ul>
-        </div>
-        <div class="hamburger-menu"><i class="fa fa-bars"></i></div>
-    </div>
-
-    <div class="banner"></div>
-
-    <div class="intro row pt-4 d-flex" id="intro">
-        <div class="left-intro col-12 col-md-8 pt-4 text-center text-md-start">
-            <div class="intro-1">
-                Let the birds of the world teach you how to be a high-flier and more
-                – when you sign up for the biggest wildlife challenge ever! From the
-                amazing albatross to the zone-tailed hawk, learn the A-Z of these
-                winged wonders and why the world needs them.
-            </div>
-            <span></span>
-            <div class="intro-2">
-                Launched in <mark>2008</mark> in India with just over a thousand participants,
-                the Wild Wisdom quiz has grown into the biggest wildlife challenge
-                ever, engaging over <mark>700,000</mark> students from over <mark>90 countries</mark>
-                around the world! Wild Wisdom is now a global challenge inspiring
-                students to learn about the environment and taking action towards
-                its protection. Compete against the best brains in the world
-                when you sign up for this challenge!
-                </b>
-            </div>
-        </div>
-        <div class="right-intro col-12 col-md-4 text-center text-md-end">
-            <div class="side-text">
-                <h1><a href="registration.html">Join</a> the <span>Wild Wisdom Global Challenge 2023</span> and get ready
-                    to soar!</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="banner2" id="banner2">
-        <div class="banner-content text-center text-md-start">
-            <h1>Winged Wonders</h1>
-            <p>Did you know that birds evolved from dinosaurs? Modern birds
-                descended from a group of two-legged dinosaurs known as
-                theropods, whose members include the notorious Tyrannosaurus
-                rex and velociraptors! Since then, birds evolved to survive – growing
-                feathers, becoming smaller, developing beaks and adapting to life in
-                the air, on land and on water</p>
-            <p>Birds are essential to our world – as pollinators, seed dispersers,
-                predators, scavengers, and ecosystem engineers, they link
-                ecosystems and help in maintaining the health of the planet! Learn
-                all about these winged wonders and their importance in our lives,
-                with <span>”Birds of the World”</span> as the theme for Wild Wisdom Global
-                Challenge 2023</p>
-        </div>
-    </div>
-
-    <div class="bird" id="bird-section">
-        <div class="bird-content">
-            <h4>
-                FLIGHT TO THE TOP!
-            </h4>
-            <p>Register > Gear up > Take off! > Flock together > State challenge > National level > International finale
-            </p>
-        </div>
-        <div class="bird-images">
-
-            <!-- bird one start -->
-
-            <span onclick="showImgTooltip()"> <img src="https://picsum.photos/200/300" class="bird-one" alt=""></span>
-            <div class="img-tooltip-box" id="img-tooltip" style="display: none;">
-                <p class="img-close-btn" onclick="hideImgTooltip()">X</p>
-                <h4>Register for the challenge</h4>
-                <p>Register your school for FREE to join the biggest wildlife challenge across the globe! The challenge
-                    is open for students from classes 6 to 9.</p>
-            </div>
-            <p class="bird-quote">The early bird gets the worm!</p>
-
-            <!-- bird one end -->
-
-            <!-- bird two start -->
-
-            <span onclick="showImg2Tooltip()"><img src="https://picsum.photos/200/300" class="bird-two" alt=""></span>
-            <div class="img-2-tooltip-box" id="img-2-tooltip" style="display: none;">
-                <p class="img-2-close-btn" onclick="hideImg2Tooltip()">X</p>
-                <h4>Gear up</h4>
-                <p>Sign up on itza.io to find learning material, practice challenges and more, to help students prepare
-                    for the WWGC</p>
-            </div>
-
-            <!-- bird two end -->
-
-            <!-- bird three start -->
-
-            <span onclick="showImg3Tooltip()"><img src="https://picsum.photos/200/300" class="bird-three" alt=""></span>
-            <div class="img-3-tooltip-box" id="img-3-tooltip" style="display: none;">
-                <p class="img-3-close-btn" onclick="hideImg3Tooltip()">X</p>
-                <h4>Classroom challenge</h4>
-                <li>Use the e-question paper you will be sent to conduct a classroom quiz within your
-                    school for a minimum of 70 students from 6th-9th grade.</li>
-                <li>Select the top 30 students as per the evaluation criteria provided by WWF-India</li>
-            </div>
-
-            <!-- bird three end -->
-
-            <!-- bird four start -->
-
-            <span onclick="showImg4Tooltip()"><img src="https://picsum.photos/200/300" class="bird-four" alt=""></span>
-            <div class="img-4-tooltip-box" id="img-4-tooltip" style="display: none;">
-                <p class="img-4-close-btn" onclick="hideImg4Tooltip()">X</p>
-                <h4>School challenge</h4>
-                <li>This round will be conducted digitally on itza.io</li>
-                <li>Share your school code with the top 30 students to begin the school challenge</li>
-                <li>Encourage these students to explore the various learning journeys and challenge
-                    content to climb up the leaderboard (Note: all 30 students should contribute equally
-                    and earn points for the school to achieve a position on the leaderboard)</li>
-                <li>Compete and qualify to enter the state-level challenge!</li>
-            </div>
-
-            <!-- bird four end -->
-
-            <!-- bird five start -->
-
-            <span onclick="showImg5Tooltip()"><img src="https://picsum.photos/200/300" class="bird-five" alt=""></span>
-            <div class="img-5-tooltip-box" id="img-5-tooltip" style="display: none;">
-                <p class="img-5-close-btn" onclick="hideImg5Tooltip()">X</p>
-                <h4>State level challenge</h4>
-                <li>This round will be conducted on-ground</li>
-                <li>The winning schools (represented by the top two students) will join the state level
-                    competition at a specified venue</li>
-                <li>The school that wins at the state level will make it to the next round!</li>
-            </div>
-
-            <!-- bird five end -->
-
-            <!-- bird six start -->
-
-            <span onclick="showImg6Tooltip()"><img src="https://picsum.photos/200/300" class="bird-six" alt=""></span>
-            <div class="img-6-tooltip-box" id="img-6-tooltip" style="display: none;">
-                <p class="img-6-close-btn" onclick="hideImg6Tooltip()">X</p>
-                <h4>National Level Challenge</h4>
-                <li>This round will be conducted digitally</li>
-                <li>State-level winning schools will join the elimination round followed by a national
-                    final between the top six teams</li>
-                <li>The winning school at the national level will enter the grand finale!</li>
-            </div>
-
-            <!-- bird six end -->
-
-            <!-- bird seven start -->
-
-            <span onclick="showImg7Tooltip()"><img src="https://picsum.photos/200/300" class="bird-seven" alt=""></span>
-            <div class="img-7-tooltip-box" id="img-7-tooltip" style="display: none;">
-                <p class="img-7-close-btn" onclick="hideImg7Tooltip()">X</p>
-                <h4>International Finale</h4>
-                <li>This round will be conducted digitally</li>
-                <li>Top schools from six countries will compete to win the title of Wild Wisdom Global
-                    Champions!</li>
-            </div>
-
-            <!-- bird seven end -->
-        </div>
-    </div>
+      </nav><br>
+      <!--BANNER IMAGE-->
+      <img src="nature.gif" alt="Nature" class="bannerimg" width="600" height="400">
 
     <div class="announcements" id="announcements">
         <div class="left-image"></div>
@@ -213,61 +62,66 @@
         <div class="right-image"></div>
     </div>
 
+    <!--image side by side ,award-->
+    
+    
 
 
-    <div class="award-segment" id="award-segment">
-        <div class="inner-award-segment">
-            <h4 class="text-center text-md-start">TITLE FOR AWARD SEGMENT</h4>
-            <div class="all-cards row d-flex justify-content-center ">
-                <div class="card card-style">
-                    <img src="https://picsum.photos/200/300" class="card-img-top" alt="card 1"style="border-radius: 50%;"style="border-radius: 50%;">
-                    <div class="card-body">
-                        <h5 class="card-title">Classroom challenge</h5>
-                        <p class="card-text">Top 30 students from
-                            each school will be given
-                            a participation certificate.
-                        </p>
-                    </div>
-                </div>
 
-                <div class="card card-style">
-                    <img src="https://picsum.photos/200/300" class="card-img-top" alt="card 2"style="border-radius: 50%;">
-                    <div class="card-body">
-                        <h5 class="card-title">State Level challenge</h5>
-                        <p class="card-text">1st position– WWF
-                            trophy and goodie bags
-                            2nd & 3rd position–
-                            Medals and goodie bags
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card card-style">
-                    <img src="https://picsum.photos/200/300" class="card-img-top" alt="card 3" style="border-radius: 50%;">
-                    <div class="card-body">
-                        <h5 class="card-title">National Level
-                            Challenge</h5>
-                        <p class="card-text">Top three performing
-                            teams win sponsored trip
-                            to a National Park
-                            Positions 4 to 6 –
-                            Consolation Prizes
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card card-style">
-                    <img src="https://picsum.photos/200/300" class="card-img-top" alt="card 4"style="border-radius: 50%;">
-                    <div class="card-body">
-                        <h5 class="card-title">International Finale</h5>
-                        <p class="card-text">Nature walk for all 60
-                            students.
-                        </p>
-                    </div>
-                </div>
+<div class="award" style="background-color: rgb(255, 255, 255);">
+    <h1 class="tit">TITLE FOR AWARD SEGMENT</h1>
+    <div class="column4">
+        <div class="card4">
+            <img src="https://picsum.photos/600/600" alt="Avatar" style="width:100%" class="circle" >
+            <div class="container">
+              <h4><b>Classroom challenge</b></h4> 
+              <p>Top 30 students from each school will be given a participation certificate.</p> 
             </div>
-        </div>
+          </div>
+      </div>
     </div>
+    <div class="column4">
+        <div class="card4">
+            <img src="https://picsum.photos/600/600" alt="Avatar" style="width:100%" class="circle" >
+            <div class="container">
+              <h4><b>State Level challenge</b></h4> 
+              <p>1st position– WWF trophy and goodie bags 2nd & 3rd position– Medals and goodie bags</p> 
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="column4">
+        <div class="card4">
+            <img src="https://picsum.photos/600/600" alt="Avatar" style="width:100%" class="circle" >
+            <div class="container">
+              <h4><b>National Level Challenge John Doe</b></h4> 
+              <p>Top three performing teams win sponsored trip to a National Park Positions 4 to 6 – Consolation Prizes</p> 
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="column4">
+        <div class="card4">
+            <img src="https://picsum.photos/600/600" alt="Avatar" style="width:100%" class="circle" >
+            <div class="container">
+              <h4><b>International Finale</b></h4> 
+              <p>Nature walk for all 60 students.</p> 
+            </div>
+          </div>
+      </div>
+    </div>
+    
+</div>
+<br>
+<h1>ㅤㅤ</h1>
+<h1>ㅤㅤㅤㅤㅤ</h1>
+
+<br><br>
+
+
+<!--SPOSNSERRRSSSS-->
+
+
 
     <div class="sponsors text-center text-md-start" id="sponsors">
         <div class="inner-sponsors">
@@ -321,16 +175,18 @@
             <p>Register for the Wild Wisdom Global Challenge 2023!</p>
             <p>Are you ready to register your students from classes 6-9 for the adventure of a lifetime?</p>
             <p class="checklist">
-                <span onmouseover="showTooltip()">Checklist!</span>
+
+                <span >Checklist!</span><br><br><br><br>
+                <a href="registration.htnl" class="checklist-reg-btn" id="register-Btn" onmouseover="showTooltip()">Register</a>
             <div class="checklist-tooltip-box" id="tooltip" style="display: none;">
                 <p class="close-btn" onclick="hideTooltip()">X</p>
-                <li>One teacher coordinator</li>
-                <li>Register before 15th August 2023</li>
-                <li>A minimum of 70 students</li>
-                <li>Conduct classroom challenge</li>
+                <li>wild wisdom,wisdom liegi</li>
+                <li>Lorem ipsum dolor sit amet </li>
+                <li>consectetur, adipisicing elit. Nesciunt culpa architecto iure. Similique.</li>
+                <li>consectetur, adipisicing elit. Nesciunt culpa architecto iure. Similique.</li>
             </div>
             </p>
-            <a href="registration.htnl" class="checklist-reg-btn" id="register-Btn">Register</a>
+           
         </div>
     </div>
 
@@ -342,22 +198,7 @@
         <p>Find us here, in case things aren’t clear!</p>
         
 <script src="https://code.jquery.com/jquery-3.6.4.js"></script>     
-<script>
-
-    function ChangeCity(id)
-    {       
-        $.ajax({
-            type:'POST',
-            url:'getcity.php',
-            data: {id : id},
-            //contentType: false,
-            //processData: false,
-            success: function(response){                
-                    $("#ct").html(response);               
-            }
-        });
-    }
-</script>        
+       
         
         
         
@@ -386,20 +227,19 @@
             <div class="row custom-table-row">
                 <div class="col">
                     <h5>Contact person</h5>
-                    <p>Ms. Aarti Dalal </p>
+                    <p>name  </p>
                 </div>
                 <div class="col">
                     <h5>Address</h5>
-                    <p>WWF India, 172-B, Lodi Estate
-New Delhi-110003  </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, cumque. Quidem accusamus aperiam non, odit officiis </p>
                 </div>
                 <div class="col">
                     <h5>Email ID</h5>
-                    <p>wildwisdom@wwfindia.net </p>
+                    <p>wabc@gmail.com </p>
                 </div>
                 <div class="col">
                     <h5>Contact numbers</h5>
-                    <p>9717073958</p>
+                    <p>9988776655</p>
                 </div>
             </div>
             
@@ -410,9 +250,8 @@ New Delhi-110003  </p>
 
     </div>
     <div class="footer row" id="footer">
-        <p class="para-1 col-12 col-lg-6 text-center">Copyright @ Wild Wisdom Global Challenge 2023 | All rights
-            reserved</p>
-        <p class="para-2 col-12 col-lg-6 text-center">Design and Development by Digital Fueled IT Pvt Ltd</p>
+        <p class="para-1 col-12 col-lg-6 text-center"><br></p>
+        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

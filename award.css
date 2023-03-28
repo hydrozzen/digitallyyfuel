@@ -1,0 +1,41 @@
+
+.column4 {
+    margin-left: 4%;
+  float: left;
+  
+  width: 20%;
+  padding: 5px;
+ 
+}
+
+/* Clearfix (clear floats) */
+.row4::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.card4 {
+    
+    transition: 0.3s;
+    width: 100%;
+    transition: transform .2s; /* Animation */
+    
+    
+  }
+  
+ 
+  
+
+  
+  .card4:hover:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .circle{
+    border-radius: 50%;
+  }
+  .tit{
+    color: aqua;
+    font-weight: 700;
+    margin-left: 5%;
+    font-size: x-large;
+  }
