@@ -44,12 +44,13 @@ html {
 }
 
 .announcements .inputs input {
-    width: 100%;
+    width: 90%;
     margin: 5px;
     background-color: #12a0af;
     padding: 10px;
     color: white;
     border: none;
+    margin-left: -10%;
 }
 
 .announcements .left-image {
@@ -68,6 +69,7 @@ html {
     position: absolute;
     right: -8%;
         top: -8%;
+        margin-right: 15%;
     width: 537px;
     height: 449px;
     background-image: url(right.webp);
@@ -402,3 +404,34 @@ legend {
         font-size: 22px;
     }
 }
+
+/*******table jo banner kae neeche hai*************/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+.left{
+    color: grey;
+    font-weight: 300;
+    margin-left: 15%;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.right{
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: 700;
+    font-weight: 900;
+}
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+
